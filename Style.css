@@ -1,0 +1,306 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/backgroundImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.drone {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -100px;
+}
+.header {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 50px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 200;
+}
+.subTitle {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+.paragraph {
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    font-weight: 500;
+}
+/* delivery box */
+.bodyContent{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.boxTitle{
+    font-family: 'Rubik 80s Fade';
+    font-weight: 300;
+    font-size: 60px;
+    color:black;
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    top: 580px;
+    transform: translateX(3%); 
+    text-shadow: 15px 15px 15px  black;
+    z-index: 10;
+}
+/* form */
+form{
+    position: absolute;
+    top: 330px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form label{
+    align-self: flex-start;
+    margin-left: 5px;
+}
+form input{
+    width: 250px;
+    height: 25px;
+    border-radius: 15px;
+    margin: 2px 0px;
+}
+form button {
+    width: 100px;
+    padding: 2px 0px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #014755;
+
+}
+form button:hover {
+    background-color: #13869d;
+    font-weight: bold;
+}
+.boxImage{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 240px;
+}
+.footer{
+    position: absolute;
+    top: 680px;
+    width: 300px;
+    height: 50px;
+}
+.contacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.contacts a{
+    transform: rotate3d(1, 0, 0, 60deg);
+}
+.contacts a img{
+    width: 40px;
+    height: 50px;
+    border-radius: 10px;
+}
+.contacts a img:hover {
+    box-shadow: 2px 2px 7px 1px #888888;
+    transform: translateY(-5%);
+}
+/* responsive */
+@media screen and (max-width: 650px) {
+    .drone {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: -100px;
+    }
+    .header {
+        position: relative;
+        top: 80px;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .subTitle {
+        font-size: 20px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+    }
+    .boxTitle {
+        font-size: 45px;
+        width: 350px;
+        height: 80px;
+        position: absolute;
+        top: 580px;
+        transform: translateX(15%);
+    }
+    form {
+        position: absolute;
+        top: 360px;
+    }
+    form label {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    form input {
+        width: 230px;
+        height: 18px;
+        border-radius: 15px;
+        margin: 2px 0px;
+    }
+    form button {
+        width: 80px;
+        padding: 2px 0px;
+    }
+    .boxImage {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 300px;
+    }
+    .footer {
+        position: absolute;
+        top: 650px;
+        width: 300px;
+        height: 50px;
+    }
+    .contacts a img {
+        width: 40px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+        .header h1 {
+            font-size: 35px;
+        }
+        .boxTitle {
+            font-size: 40px;
+            width: 350px;
+            height: 80px;
+            position: absolute;
+            top: 530px;
+            transform: translateX(19%);
+        }
+
+        form {
+            position: absolute;
+            top: 318px;
+        }
+
+        form label {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 230px;
+            height: 18px;
+            border-radius: 15px;
+            margin: 2px 0px;
+        }
+
+        form button {
+            width: 80px;
+            padding: 2px 0px;
+        }
+
+        .boxImage {
+            width: 350px;
+            height: 400px;
+            position: absolute;
+            top: 250px;
+        }
+
+        .footer {
+            position: absolute;
+            top: 600px;
+            width: 300px;
+            height: 50px;
+        }
+
+        .contacts a img {
+            width: 40px;
+            height: 45px;
+        }
+}
+@media screen and (max-height: 645px) {
+    .boxTitle {
+            font-size: 40px;
+            width: 350px;
+            height: 80px;
+            position: absolute;
+            top: 500px;
+            transform: translateX(19%);
+        }
+    
+        form {
+            position: absolute;
+            top: 285px;
+        }
+    
+        form label {
+            font-size: 13px;
+            font-weight: bold;
+        }
+    
+        form input {
+            width: 230px;
+            height: 18px;
+            border-radius: 15px;
+            margin: 2px 0px;
+        }
+    
+        form button {
+            width: 80px;
+            padding: 2px 0px;
+        }
+    
+        .boxImage {
+            width: 350px;
+            height: 400px;
+            position: absolute;
+            top: 220px;
+        }
+    
+        .footer {
+            position: absolute;
+            top: 570px;
+            width: 300px;
+            height: 50px;
+        }
+    
+        .contacts a img {
+            width: 40px;
+            height: 45px;
+        }
+}
